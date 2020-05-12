@@ -25,18 +25,18 @@ In the root folder of the project:
 
 # Framework used for the frontend
 
-    Front-end Framework/Library:
-        -   React
-    Fetching: 
-        -   Axios
-    Styling:
-        -   Styled Components
-    State Management:
-        -   redux
-        -   react-redux
-        -   redux-thunk
-        -   redux-devtools-extension
-    Routing:
-        -   react-router
-    Tools:
-        -   polished (pixels convertion to rem)
+Front-end Framework/Library:
+    -   React
+Fetching: 
+    -   Axios
+Styling:
+    -   Styled Components
+State Management:
+    -   redux
+    -   react-redux
+    -   redux-thunk
+    -   redux-devtools-extension
+Routing:
+    -   react-router
+Tools:
+    -   polished (pixels convertion to rem)
