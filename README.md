@@ -1,9 +1,7 @@
 # Motion
 A social-media clone
 
-```
-
-### Installing
+# Installing
 
 In the folder Frontend:
 
@@ -12,7 +10,7 @@ In the folder Frontend:
     - npm start
 ```
 
-- In the root folder of the project:
+In the root folder of the project:
 
 ```
     - docker-compose up
@@ -25,7 +23,7 @@ In the folder Frontend:
         - python manage.py runserver 0.0.0.0:8000
 ```
 
-# framework used for the frontend
+# Framework used for the frontend
 
     Front-end Framework/Library:
         -   React
