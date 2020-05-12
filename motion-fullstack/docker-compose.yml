@@ -1,0 +1,41 @@
+version: '3'
+
+services:
+  postgres:
+    image: postgres:latest
+    ports:
+      - '5432:5432'
+    env_file:
+      - dev.env
+    volumes:
+      - postgres:/var/lib/postgresql/data
+
+  backend:
+    image: registry.gitlab.propulsion-home.ch/ruben-villalon/week_8/motion_social_media:latest
+    restart: always
+    env_file:
+      - dev.env
+    command: '/usr/sbin/sshd -D'
+    ports:
+      - '8000:8000'
+      - '4777:22'
+    depends_on:
+      - postgres
+    volumes:
+      - ./backend:/backend
+      - ./media-files:/media-files
+      - ./static-files:/static-files
+#
+#  frontend:
+#    image: registry.gitlab.propulsion-home.ch/ruben-villalon/week_8/motion_social_media:latest
+#    restart: always
+#    command: 'npm run start'
+#    port:
+#      - '3000:3000'
+#    volumes:
+#      - ./frontend:/frontend
+
+volumes:
+  postgres:
+  media-files:
+  static-files:
